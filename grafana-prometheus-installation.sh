@@ -14,7 +14,7 @@ echo "---------------------------------------------------------------"
 echo " "
 
 kubectl create ns prometheus
-helm install prometheus prometheus-community/kube-prometheus-stack
+helm install prometheus prometheus-community/kube-prometheus-stack -n prometheus
 
 echo "---------------------------------------------------------------"
 echo "                GRAFANA AND PROMETHEUS INSTALLED               "
